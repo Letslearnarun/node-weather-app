@@ -59,7 +59,9 @@ app.get('/weather',(req,res)=>{
                 res.send({
                     location: req.query.address,
                     Temperature: foreCastData.temperature,
-                    feelslike: foreCastData.feelsLike
+                    feelslike: foreCastData.feelsLike,
+                    windspeed: foreCastData.windspeed,
+                    cloudcover: foreCastData.cloudcover
                 })
             })
         })
